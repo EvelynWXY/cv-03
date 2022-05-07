@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto; /*左右居中*/
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      body {
+      }
+
+      article {
+        padding-top: 30px;
+      }
+      p {
+        margin: 0.5em 0;
+      }
+      h1 {
+        font-size: 30px;
+        margin-top: 0px;
+      }
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        color: inherit;
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+      strong {
+        color: #f60;
+      }
+      p,
+      li {
+        color: #666;
+      }
+      h4,
+      h5,
+      h6,
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      .bio {
+        position: relative;
+      }
+      .bio > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+    <style>
+      .jobs {
+      }
+      .jobs > h2 {
+      }
+      .jobs > ol {
+      }
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+      .jobs header > h3 {
+        font-size: 18xp;
+        color: #333;
+      }
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+    <style>
+      .projects {
+      }
+      .projects p {
+        color: #666;
+      }
+      .projects strong {
+        color: #f60;
+      }
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .projects > ol > li > header > h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      .openSource {
+      }
+      .openSource > h2 {
+      }
+
+      .openSource > ul {
+      }
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .openSource h3 {
+      }
+    </style>
+    <style>
+      .skills {
+      }
+      #skills {
+        width: 500px;
+        height: 270px;
+      }
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > #skills {
+      }
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+      .skills > .wrapper strong {
+        color: #f60;
+      }
+
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+        article {
+          width: auto;
+          height: auto;
+        }
+        .bio img {
+          display: none;
+        }
+        .skills .wrapper {
+          flex-direction: column;
+        }
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>王新月</h1>
+        <img src="./images/1.png" alt="" width="98.3" height="125" />
+        <p>女 | 24岁 | 前端开发工程师 | 上海</p>
+        <p>
+          手机: <a href="tel:18226386199">18226386199</a> | 微信: NYWS19980520 |
+          邮箱:
+          <a href="mailto:ningyuewushang@163.com">ningyuewushang@163.com</a>
+        </p>
+      </section>
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span> <time>2015年</time>~<time>2019年</time> </span>
+          安徽工程大学机电学院 软件工程 本科
+        </p>
+      </section>
+
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>深圳市四格互联信息技术有限公司</h3>
+              <h4>实施工程师</h4>
+              <span> <time>2021年9月</time>~<time>2021年12月</time> </span>
+            </header>
+            <ul>
+              <li>独立负责物业公司的ERP系统与第三方系统对接实施工作</li>
+              <li>负责系统单元测试、文档撰写</li>
+              <li>负责培训用户、系统功能上线的推广以及异常处理</li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>信义节能玻璃（芜湖）有限公司</h3>
+              <h4>实施工程师</h4>
+              <span> <time>2019年4月</time>~<time>2021年4月</time> </span>
+            </header>
+            <ul>
+              <li>
+                集团的SRM、TMS项目实施、上线(从项目启动初期立项、调研、与其他系统对接、调试接口、测试、正是环境上线的数据整理、操作手册的编写、上线推广培训)以及后期运维等工作ERP
+              </li>
+              <li>集团使用的ERP系统库存、采购模块运维工作</li>
+              <li>
+                独立负责集团新工业园的ERP系统库存模块、采购模块、SRM系统的上线(调研、系统配置、培训、运维等工作)
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>科大讯飞 讯飞教育</h3>
+              <h4>助教</h4>
+              <span> <time>2018年2月</time>~<time>2018年5月</time> </span>
+            </header>
+            <ul>
+              <li>使用混合开发参与学校移动互联网方向项目</li>
+              <li>负责iOS移动互联开发相关课程的录制</li>
+              <li>
+                随堂协助主讲老师授课、批改平时作业、学生答疑以及试卷批阅等
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>谷UI</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一款基于 <strong>React</strong> / <strong>TypeScript</strong> /
+              <strong>Webpack</strong> 的 UI 框架
+            </p>
+            <p>
+              主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
+            </p>
+            <p>已被公司前端同事广泛使用，有效提高前端团队的开发效率。</p>
+
+            <p>
+              制作过程让我对 TypeScript 和单元测试有了新的认识。
+              我将其总结成了一篇博客《TS 泛型的使用》。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>写代码啦.com</h3>
+              <span>
+                <a href="#">源码私有</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              这是一个基于 <strong>Rails</strong> 和
+              <strong>Vue</strong> 的多页面应用。
+            </p>
+            <p>
+              主要功能包括微信登录、手机验证、直播、点播、反盗版、答题系统、课程管理系统等。
+              从数据库设计到前端展示，都是由我主导，另有两名前端辅助我。
+            </p>
+            <p>
+              该系统<strong>大幅提高教学效率</strong>，优化教学流程，受到公司和用户的好评。
+            </p>
+          </li>
+          <li class="page2">
+            <header>
+              <h3>旺财记账</h3>
+              <span>
+                <a href="#">源码私有</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>React</strong> /
+              <strong>TypeScript</strong> 的移动端单页面应用。
+            </p>
+
+            <p>
+              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks
+              有了深刻的理解和应用。
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>自己写的 DOM 库</h3>
+              <a href="#">源码链接</a>
+            </header>
+            <p>
+              实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>自动绘制皮卡丘</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/pikachu-2">源码链接</a>
+                <a href="https://evelynwxy.github.io/pikachu-2/dist/test.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱的作品
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>简易画板</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/canvas-demo-1"
+                  >源码链接</a
+                >
+                <a href="https://evelynwxy.github.io/canvas-demo-1/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              我在学习
+              <strong>Canvas</strong> 时做的一个小作品,手机端和电脑端均可操作
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <div id="skills"></div>
+          <ul>
+            <li>熟悉静态页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+            <li>
+              熟悉<strong>前后端分离</strong>技术，包括
+              AJAX、跨域、前端路由、Cookie、session 等
+            </li>
+            <li>
+              熟练掌握<strong>Vue全家桶</strong>的使用，使用
+              VueCli、VueRouter、Vuex 等
+            </li>
+            <li>
+              熟练掌握<strong>React全家桶</strong>的使用，包括
+              create-react-app、ReactRouter、Redux
+            </li>
+            <li>熟悉ES6，包括 let / Promise / await / 析构赋值</li>
+            <li>
+              了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的
+            </li>
+            <li>了解 <strong>Webpack 的配置和优化</strong></li>
+          </ul>
+        </div>
+      </section>
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://www.zhihu.com/people/ning-yue-wu-shang">我的博客</a
+            >, 目前已有13篇技术文章
+          </li>
+          <li>
+            <a href="https://github.com/EvelynWXY">我的GitHub</a> , 过去几个月有
+            112 次提交
+          </li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
