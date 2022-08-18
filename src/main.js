@@ -1,3 +1,4 @@
+var echarts = require("echarts");
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById("skills"));
 
@@ -19,12 +20,13 @@ var option = {
       label: {
         show: false,
       },
+      labelLine: {
+        // length: 8,
+        // length2: 8,
+      },
       emphasis: {
         label: {
           show: true,
-          alignTo: "none",
-          length: 20,
-          length2: 10,
         },
       },
       data: [
