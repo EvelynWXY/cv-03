@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
     <title>我的简历</title>
     <style>
       * {
@@ -13,32 +16,28 @@
         background: #eee;
         margin: 20px 0;
       }
-
       article {
-        width: 21cm;
+        background: #fff;
+        margin: 0 auto;
         min-height: 29.7cm;
-        background: white;
-        margin: 0 auto; /*左右居中*/
         overflow: auto;
         padding: 1em;
+        width: 21cm;
       }
-    
-</style>
+    </style>
     <style media="print">
       body {
         margin: 0;
       }
       .page2 {
-        page-break-before: always;
         margin-top: 30px;
+        page-break-before: always;
       }
-    
-</style>
+    </style>
     <style>
-      body {
-      }
-
       article {
+        background: #f0cbdb;
+        background: radial-gradient(circle, #f0cbdb 0, #c2d6ee 100%);
         padding-top: 30px;
       }
       p {
@@ -46,34 +45,33 @@
       }
       h1 {
         font-size: 30px;
-        margin-top: 0px;
+        margin-top: 0;
       }
       ol,
       ul {
         list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0;
       }
       a {
+        border-bottom: 1px solid;
         color: inherit;
         color: #999;
         text-decoration: none;
-        border-bottom: 1px solid;
       }
       strong {
-        color: #f60;
+        color: #009eeb;
       }
-      p,
-      li {
+      li,
+      p {
         color: #666;
       }
       h4,
       h5,
       h6,
       strong {
-        font-weight: normal;
+        font-weight: 400;
       }
-
       h3,
       h4,
       h5,
@@ -85,52 +83,42 @@
       }
       .bio > img {
         position: absolute;
-        top: 0;
         right: 0;
+        top: 0;
       }
-    
-</style>
+    </style>
     <style>
-      .jobs {
-      }
-      .jobs > h2 {
-      }
-      .jobs > ol {
-      }
       .jobs > ol > li {
         margin: 12px 0;
       }
       .jobs header {
-        display: flex;
         color: #666;
+        display: flex;
         margin-bottom: 12px;
       }
       .jobs header > h3 {
-        font-size: 18xp;
         color: #333;
+        font-size: 18xp;
       }
       .jobs header > h4 {
-        margin-left: 1em;
         font-size: 18px;
+        margin-left: 1em;
       }
       .jobs header > span {
         font-size: 18px;
         margin-left: auto;
       }
-    
-</style>
+    </style>
     <style>
-      .projects {
-      }
       .projects p {
         color: #666;
       }
       .projects strong {
-        color: #f60;
+        color: #009eeb;
       }
       .projects > ol {
-        margin-top: 0;
         list-style-position: inside;
+        margin-top: 0;
         padding: 0;
       }
       .projects > ol > li {
@@ -143,39 +131,26 @@
       .projects > ol > li > header > h3 {
         display: inline-block;
       }
-    
-</style>
+    </style>
     <style>
-      .openSource {
-      }
-      .openSource > h2 {
-      }
-
-      .openSource > ul {
-      }
       .openSource > ul > li {
         margin-bottom: 24px;
       }
       .openSource header {
-        position: relative;
         display: flex;
         justify-content: space-between;
+        position: relative;
       }
       .openSource header img {
         position: absolute;
-        top: 0;
         right: 0;
+        top: 0;
       }
-      .openSource h3 {
-      }
-    
-</style>
+    </style>
     <style>
-      .skills {
-      }
       #skills {
-        width: 500px;
         height: 270px;
+        width: 500px;
       }
       .skills > .wrapper {
         display: flex;
@@ -184,30 +159,25 @@
       .skills > .wrapper > :first-child {
         margin-right: 24px;
       }
-
-      .skills > .wrapper > #skills {
-      }
       .skills > .wrapper > ul {
         color: #666;
       }
       .skills > .wrapper strong {
-        color: #f60;
+        color: #009eeb;
       }
-
       .skills > .wrapper > ul > li {
         line-height: 1.2;
         margin-bottom: 8px;
       }
-    
-</style>
+    </style>
     <style>
       @media (max-width: 500px) {
         body {
           margin: 0;
         }
         article {
-          width: auto;
           height: auto;
+          width: auto;
         }
         .bio img {
           display: none;
@@ -227,14 +197,14 @@
           margin: 0;
         }
       }
-    
-</style>
+    </style>
+    <script></script>
   </head>
   <body>
     <article>
       <section class="bio">
         <h1>王新月</h1>
-        <img src="/1.fb639c68.png" alt="" width="98.3" height="125">
+        <img src="1.47854f6c.png" alt="" width="98.3" height="125" />
         <p>女 | 24岁 | 前端开发工程师 | 上海</p>
         <p>
           手机: <a href="tel:18226386199">18226386199</a> | 微信: NYWS19980520 |
@@ -244,14 +214,166 @@
       </section>
       <section class="education">
         <h2>教育经历</h2>
+        <hr size="5" />
         <p>
-          <span> <time>2015年</time>~<time>2019年</time> </span>
-          安徽工程大学机电学院 软件工程 本科
+          <span> <time>2015年</time> ~ <time>2019年</time> </span>
+          安徽信息工程学院 软件工程 本科 工学学士学位
         </p>
+        <p>GPA：3.21 &nbsp&nbsp&nbsp专业排名前 6%</p>
+        <p></p>
       </section>
-
+      <section class="projects">
+        <h2>项目经历</h2>
+        <hr size="5" />
+        <ol>
+          <li>
+            <header>
+              <h3>共享博客平台</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/blog-client">源码链接</a>
+                <a href="https://evelynwxy.github.io/vue-blog-preview/#/"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一款基于 <strong>Vue</strong> / <strong>vue-cli</strong> /<strong
+                >vue-router</strong
+              >
+              / <strong>Vuex</strong> /<strong>Webpack</strong>/<strong
+                >ES6</strong
+              >
+              和 <strong>Element-UI</strong> / 的 UI 框架
+            </p>
+            <p>
+              主要包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能
+            </p>
+            <p>对于我个人而言亦可用做学习笔记的记录平台</p>
+            <p>
+              使用 vue-router 创建路由，封装
+              Axios过程中了解了jwt鉴权机制，页面布局使用的是 grid 布局
+            </p>
+            <p>
+              这个项目让我对 vue-router 和 Vuex 有更进一步的学习。
+              我将其总结成了一篇博客《博客项目》。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>大屏可视化项目</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/big-screen-demo-02"
+                  >源码私有</a
+                >
+                <a href="https://evelynwxy.github.io/big-screen-02-website/"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              这是一个基于 <strong>React、ReactRouter</strong> 和
+              <strong>Echarts</strong> 的大屏项目。
+            </p>
+            <p>
+              这个项目是我在学习 React、前端可视化和 Echart
+              时，仿照方应杭的开源项目制作而成的
+            </p>
+            <p>
+              页面布局使用了<strong> Grid </strong>和<strong> Flex </strong
+              >，为了适应所有屏幕，我使用了<strong> 动态rem </strong>方案， 用
+              rem 和 px 函数适配各种屏幕，并且总结了用 Grid 和
+              Flex布局的一些小技巧，具体见我的博客
+              <span
+                ><a href="https://zhuanlan.zhihu.com/p/536701805"
+                  >大屏可视化项目</a
+                ></span
+              >
+            </p>
+            <p>
+              项目中所包含的图例有漏斗图、柱形图、折线图、饼图、地图和表格等，并且所有图例都模拟实时更新数据并辅以动画交互。通过这个项目，我了解并掌握了大屏可视化项目的制作技巧。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>随心记</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/billing-01/">源码私有</a>
+                <a href="https://evelynwxy.github.io/billing-01-website/"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>Vue、VueRouter、Vuex</strong> /
+              <strong>TypeScript</strong> 的移动端单页面应用（SPA）。
+            </p>
+            <p>
+              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              由本人独立设计（figma）及实现，期间遇到了很多很多 webpack 和
+              TypeScript
+              方面的问题，解决过程记录在本人的博客。源代码几乎完全用TypeScript
+              实现，用到了装饰器等语法， 让我对 Vue 和
+              TypeScript有了深刻的理解和应用。
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <hr size="5" />
+        <ul>
+          <li>
+            <header>
+              <h3>自己写的 DOM 库</h3>
+              <a href="https://github.com/EvelynWXY/DOM-02-prototype"
+                >源码链接</a
+              >
+            </header>
+            <p>
+              实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能
+            </p>
+          </li>
+          <li class="page2">
+            <header>
+              <h3>自动绘制皮卡丘</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/pikachu-2">源码链接</a>
+                <a href="https://evelynwxy.github.io/pikachu-2/dist/test.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              这是我在学习
+              <strong>CSS3和动画</strong> 时制作的一个可爱的作品，可调节速度哦
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>简易画板</h3>
+              <span>
+                <a href="https://github.com/EvelynWXY/canvas-demo-1"
+                  >源码链接</a
+                >
+                <a href="https://evelynwxy.github.io/canvas-demo-1/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              我在学习
+              <strong>Canvas</strong>
+              时做的一个小作品，随手涂鸦解压神器，手机端和电脑端均可操作
+            </p>
+          </li>
+        </ul>
+      </section>
       <section class="jobs">
         <h2>工作经历</h2>
+        <hr size="5" />
         <ol>
           <li>
             <header>
@@ -260,9 +382,16 @@
               <span> <time>2021年9月</time>~<time>2021年12月</time> </span>
             </header>
             <ul>
-              <li>独立负责物业公司的ERP系统与第三方系统对接实施工作</li>
-              <li>负责系统单元测试、文档撰写</li>
-              <li>负责培训用户、系统功能上线的推广以及异常处理</li>
+              <li>· 独立负责物业公司的ERP系统与第三方系统对接实施工作</li>
+              <li>
+                ·
+                负责系统单元测试、文档撰写（调研报告、解决方案、测试报告、操作手册、培训材料、验收确认单等）
+              </li>
+              <li>· 负责培训用户、系统功能上线的推广以及异常处理</li>
+              <li>
+                ·
+                在职期间独立完成实施项目与第三方系统接口对接，将系统功能推行上线并完成了验收
+              </li>
             </ul>
           </li>
           <li>
@@ -273,147 +402,36 @@
             </header>
             <ul>
               <li>
+                ·
                 集团的SRM、TMS项目实施、上线(从项目启动初期立项、调研、与其他系统对接、调试接口、测试、正是环境上线的数据整理、操作手册的编写、上线推广培训)以及后期运维等工作ERP
               </li>
-              <li>集团使用的ERP系统库存、采购模块运维工作</li>
+              <li>· 集团使用的ERP系统库存、采购模块运维工作</li>
               <li>
+                ·
                 独立负责集团新工业园的ERP系统库存模块、采购模块、SRM系统的上线(调研、系统配置、培训、运维等工作)
               </li>
+              <li>· 熟悉 Prince2 项目管理方法论</li>
             </ul>
           </li>
           <li>
             <header>
-              <h3>科大讯飞 讯飞教育</h3>
-              <h4>助教</h4>
+              <h3>苏州科大讯飞教育科技有限公司</h3>
+              <h4>教学研发部-助教</h4>
               <span> <time>2018年2月</time>~<time>2018年5月</time> </span>
             </header>
             <ul>
-              <li>使用混合开发参与学校移动互联网方向项目</li>
-              <li>负责iOS移动互联开发相关课程的录制</li>
+              <li>· 使用混合开发参与学校移动互联网方向项目</li>
+              <li>· 负责iOS移动互联开发相关课程的录制</li>
               <li>
-                随堂协助主讲老师授课、批改平时作业、学生答疑以及试卷批阅等
+                · 随堂协助主讲老师授课、批改平时作业、学生答疑以及试卷批阅等
               </li>
             </ul>
           </li>
         </ol>
       </section>
-
-      <section class="projects">
-        <h2>项目经历</h2>
-        <ol>
-          <li>
-            <header>
-              <h3>谷UI</h3>
-              <span>
-                <a href="#">源码链接</a>
-                <a href="#">项目预览</a>
-              </span>
-            </header>
-            <p>
-              一款基于 <strong>React</strong> / <strong>TypeScript</strong> /
-              <strong>Webpack</strong> 的 UI 框架
-            </p>
-            <p>
-              主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
-            </p>
-            <p>已被公司前端同事广泛使用，有效提高前端团队的开发效率。</p>
-
-            <p>
-              制作过程让我对 TypeScript 和单元测试有了新的认识。
-              我将其总结成了一篇博客《TS 泛型的使用》。
-            </p>
-          </li>
-          <li>
-            <header>
-              <h3>大屏可视化项目</h3>
-              <span>
-                <a href="#">源码私有</a>
-                <a href="#">项目预览</a>
-              </span>
-            </header>
-            <p>
-              这是一个基于 <strong>React、ReactRouter</strong> 和
-              <strong>Echarts</strong> 的大屏项目。
-            </p>
-            <p>
-              这个项目是我在学习React、前端可视化和Echart时，仿照方应杭的开源项目制作而成的
-            </p>
-            <p>
-              页面布局使用了<strong>Grid</strong>和<strong>Flex</strong>，为了适应所有屏幕，我使用了<strong>动态rem</strong>方案，
-              用 rem 和 px 函数适配各种屏幕，并且总结了用 Grid 和 Flex布局的一些小技巧，具体见我的博客
-              <span><a href="https://zhuanlan.zhihu.com/p/536701805">大屏可视化项目</a></span> 
-            </p>
-            <p>项目中所包含的图例有漏斗图、柱形图、折线图、饼图、地图和表格等，并且所有图例都模拟实时更新数据并辅以动画交互。通过这个项目，我了解并掌握了大屏可视化项目的制作技巧。</p>
-          </li>
-          <li class="page2">
-            <header>
-              <h3>随心记</h3>
-              <span>
-                <a href="https://github.com/EvelynWXY/billing-01/
-                ">源码私有</a>
-                <a href="https://evelynwxy.github.io/billing-01-website/">项目预览</a>
-              </span>
-            </header>
-            <p>
-              一个基于 <strong>Vue、VueRouter、Vuex</strong> /
-              <strong>TypeScript</strong> 的移动端单页面应用（SPA）。
-            </p>
-
-            <p>
-              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-              而且可以通过图表查看自己的消费习惯。
-            </p>
-            <p>
-              由本人独立设计（figma）及实现，期间遇到了很多很多 webpack 和 TypeScript 
-              方面的问题，解决过程记录在本人的博客。源代码几乎完全用TypeScript 实现，用到了装饰器等语法，
-              让我对 Vue 和 TypeScript有了深刻的理解和应用。
-            </p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="openSource">
-        <h2>开源项目</h2>
-        <ul>
-          <li>
-            <header>
-              <h3>自己写的 DOM 库</h3>
-              <a href="#">源码链接</a>
-            </header>
-            <p>
-              实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能
-            </p>
-          </li>
-          <li>
-            <header>
-              <h3>自动绘制皮卡丘</h3>
-              <span>
-                <a href="https://github.com/EvelynWXY/pikachu-2">源码链接</a>
-                <a href="https://evelynwxy.github.io/pikachu-2/dist/test.html">项目预览</a>
-              </span>
-            </header>
-            <p>
-              这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱的作品
-            </p>
-          </li>
-          <li>
-            <header>
-              <h3>简易画板</h3>
-              <span>
-                <a href="https://github.com/EvelynWXY/canvas-demo-1">源码链接</a>
-                <a href="https://evelynwxy.github.io/canvas-demo-1/index.html">项目预览</a>
-              </span>
-            </header>
-            <p>
-              我在学习
-              <strong>Canvas</strong> 时做的一个小作品,手机端和电脑端均可操作
-            </p>
-          </li>
-        </ul>
-      </section>
-
       <section class="skills">
         <h2>技能</h2>
+        <hr size="5" />
         <div class="wrapper">
           <div id="skills"></div>
           <ul>
@@ -438,21 +456,50 @@
           </ul>
         </div>
       </section>
+      <section class="page2">
+        <h2>其他技能</h2>
+        <hr size="5" />
+        <ul>
+          <li>外语： CET-4 500分 英语口语交流能力良好</li>
+          <li>社会类：普通话证书二级甲等</li>
+        </ul>
+      </section>
       <section class="others">
         <h2>其他链接</h2>
+        <hr size="5" />
         <ul>
           <li>
-            <a href="https://www.zhihu.com/people/ning-yue-wu-shang">我的博客</a>, 目前已有20篇技术文章
+            <a href="https://www.zhihu.com/people/ning-yue-wu-shang">我的博客</a
+            >, 目前已有38篇技术文章，记录了我前段开发学习过程中的收获
           </li>
           <li>
             <a href="https://github.com/EvelynWXY">我的GitHub</a> , 过去几个月有
-            249 次提交
+            319 次提交
           </li>
         </ul>
       </section>
+      <section class="awards">
+        <h2>荣获奖项</h2>
+        <hr size="5" />
+        <p>
+          <span> <time>2015</time> ~ <time>2019 学年</time> </span>
+          大学生专利创新大赛校一等奖、市三等奖
+        </p>
+        <p>
+          <span> <time>2017</time> ~ <time>2018 学年</time> </span>
+          中国计算机设计大赛省优胜奖
+        </p>
+        <p>
+          <span> <time>2016</time> ~ <time>2017 学年</time> </span>
+          因学习成绩优异获得校二等奖学金
+        </p>
+        <p>
+          <span> <time>2015</time> ~ <time>2016 学年</time> </span>
+          因学习成绩优异获得国家奖学金、校一等奖学金
+        </p>
+      </section>
     </article>
     <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"></script>
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.js"></script> -->
-    <script src="/index.de158e3a.js"></script>
+    <script src="index.ba9ad748.js"></script>
   </body>
 </html>
